@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Video Downloader</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+    body {
+  background-image: url('https://i.pinimg.com/474x/d4/8a/6b/d48a6bff5b9843ee6505e9e2b60169be.jpg');
+  background-size: cover;
+height: 100vh;
+    padding:0;
+    margin:0;
+}
+    .download{
+    width:35%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin: 0 auto;
+    transform: translate(0, -50%);
+    text-align: center; 
+}
+.gif
+{
+    background-image: url('https://media.giphy.com/media/C3LswL9d5MaVq/giphy.gif');
+    padding: 80px;
+}
+button{
+    border-radius: 12px;
+    font-size: 15px;
+    padding: 5px;
+}
+input{
+    border-radius: 12px;
+    font-size:15px;
+    padding: 5px;
+}
+spam{
+    text-align: right;
+}
+</style>
+</head>
+<body>
+
+<div class="download">
+    <h1>YouTube Video Downloader</h1>
+    <div class='gif'></div>
+    <br><br>
+    <form action="{{ url_for('download')}}"method="post">
+        <input type="text" name="path" size='45' placeholder="Enter the path to save your file" required="required" />
+        <p>Example : C:\Users\your_user_name</p>
+        <br>
+        <input type="text" name="link" size='45' placeholder="Paste the link here" required="required" />
+        <br><br>
+        
+        <button type="submit" class="btn btn-primary btn-block btn-large">Download</button>
+    </form>
+    <p>NOTE: We are not resposbile for downloading YouTube Content.For safety purpose use YouTube Red to download videos offline with their permissions.
+        This is to demonstarte the usage of Deployment of Flask application using heroku. For furthur details refer <a href="https://github.com/developers-cosmos/Video-Downloader">Developers-Cosmos/Video-Downloader</a></p>
+    </p>
+       <br>
+       <a href="https://www.termsfeed.com/terms-conditions/bf88778dc95673a9e81da8795117e256">T&C</a>
+    </spam>
+ </div>
+ {{status_text}}
+    </body>
+</html>
