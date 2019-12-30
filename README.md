@@ -2,7 +2,7 @@
 
 - ## Project Aims
 
-    This Project aims to create a youtube video downloader using youtube-dl, the main intension was to get the idea of creating a Flask Application, Amazon Elasticbean. I have used the basic concepts, you can setup easily with the provided files. You can see the deployed application at [Video-Downloader](videodownloader.kgvbm2zji7.ap-south-1.elasticbeanstalk.com/).
+    This Project aims to create a youtube video downloader using youtube-dl, the main intension was to get the idea of creating a Flask Application, Amazon Elasticbean. I have used the basic concepts, you can setup easily with the provided files. You can see the deployed application at [Video-Downloader](videodownloader.kgvbm2zji7.ap-south-1.elasticbeanstalk.com).
 
 - ## SetUp
 
